@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lab Raj Thakurathi's Logger Using local storage "
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Chewy&family=Merienda&family=Neucha&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./loger.png" type="image/icon type" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Logger</title>
+  </head>
+  <body>
+    <header>
+      <h1>You have <span id="total_logs"></span> Logs</h1>
+      <p>Log Your Three Biggest Achievements of Today</p>
+      <div class="add-log-wrapper">
+        <button><i class="las la-plus"></i>Add Today's Log</button>
+        <div class="hidden">
+          <form>
+            <div>
+              <label for="log_1">Item 1</label>
+              <input type="text" id="log_1" />
+            </div>
+            <div>
+              <label for="log_2">Item 2</label> <input type="text" id="log_2" />
+            </div>
+            <div>
+              <label for="log_3">Item 3</label> <input type="text" id="log_3" />
+            </div>
+
+            <div>
+              <input type="submit" id="btn-submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <hr />
+
+    <div class="log-wrapper">
+      <ul class="ul">
+        <span class="end"></span>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
